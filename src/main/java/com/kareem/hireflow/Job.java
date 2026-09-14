@@ -6,6 +6,17 @@ public class Job {
     private String company;
     private String location;
 
+    public Job(int id,String title,String company, String location){
+        this.id = id;
+        this.title = title;
+        this.company = company;
+        this.location = location;
+    }
+
+    public Job(){
+
+    }
+
     public int getId(){
         return id;
     }

@@ -13,13 +13,13 @@ public class HelloController {
 
     @GetMapping("/api/job-details")
     Job jobDetails(){
-        Job job = new Job();
-        job.setId(1);
-        job.setTitle("Java Full Stack Developer");
-        job.setCompany("Amazon");
-        job.setLocation("Hyderabad");
+        Job job = jobService.getJob();
         return job;
     }
 
+    private JobService jobService;
+    public HelloController(JobService jobService){
+        this.jobService = jobService;
+    }
 
 }

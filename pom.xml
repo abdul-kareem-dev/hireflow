@@ -8,6 +8,8 @@
 		<version>4.1.1</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
+
+	<packaging>jar</packaging>
 	<groupId>com.kareem</groupId>
 	<artifactId>hireflow</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
